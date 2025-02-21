@@ -2,4 +2,6 @@ h1 {
   color:#000000;
   text-align: center;
   line-height: 128px;
+  background-color: rgba(151, 151, 151, 1);
+  background-repeat: no-repeat; 
 }
