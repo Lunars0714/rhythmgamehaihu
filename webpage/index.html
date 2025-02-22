@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <meta charset="UTF-8">
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+  //共通パーツ読み込み
+    $(function() {
+      $("#header").load("/rhythmgamehaihu/webpage/include/header.html");
+      $("#footer").load("/rhythmgamehaihu/webpage/include/footer.html");
+      $("#nav").load("/rhythmgamehaihu/webpage/include/nav.html");
+    });
+  </script>
+  <link rel="stylesheet" href="/rhythmgamehaihu/webpage/include/stylesheet.css">
+  <link rel="stylesheet" href="/rhythmgamehaihu/webpage/stylesheet.css">
+  <link rel="icon" href="/rhythmgamehaihu/webpage/img/favicon.png">
+  <title>ホーム-音ゲー配布場所</title>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="nav"></div>
+  <div class="overall">
+    <main>
+      <h2 id="overview">このゲームは判定を動かして遊ぶゲームです！</h2><br>
+      <p>
+        <p1>この赤と青の色がついているレーンが今選択しているレーンです</p1><br>
+        <img class="gamescreen1" src="/rhythmgamehaihu/webpage/img/gamescreen1.png" width="427" height="240"><br>
+      </p>
+      <p>
+        <p1>なんとこれを動かすことができるんです！！</p1><br>
+        <img class="gamescreen1" src="/rhythmgamehaihu/webpage/img/slidelane.gif" ><br>
+      </p>
+      <p>
+      <p1 id="Play-video">プレイ映像はこちら</p1><br>
+        <iframe class="Play-video" src="https://www.youtube.com/embed/qrio977GIJc" title="自作ゲーム　プレイ映像" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+      </p>
+      <p1>なお、今のところWindows向けのみとなっております。<br>ご容赦ください。<p1>
+    </main>
+    <div class="Rsidebar">
+      <aside>
+        <hrs1>見出し</hrs1>
+        <prs1><li><a href="#overview">ゲームの概要</a></li></prs1>
+        <prs1><li><a href="#Play-video">プレイ映像</a></li></prs1>
+      </aside>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

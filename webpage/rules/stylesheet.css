@@ -1,0 +1,19 @@
+.left{
+    text-align: left;
+}
+ul{
+    margin: 0px;
+}
+main{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 100%;
+    max-width: 1400px;
+    background-color: rgba(255, 186, 186, 0.397);
+    text-align:center;
+}
+.overall{
+    display:flex;
+  }

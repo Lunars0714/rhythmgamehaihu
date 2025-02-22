@@ -1,4 +1,4 @@
-h1 {
+header {
   color:#000000;
   text-align: center;
   line-height: 128px;
@@ -42,7 +42,8 @@ nav ul li a:hover{
   background-color: rgb(31, 31, 31);
 }
 body{
-  text-align: center;
+  background-color: rgb(255, 230, 249);
+  background-repeat: no-repeat;
 }
 .gamescreen1{
   width: 960px;
@@ -59,4 +60,47 @@ p1{
 .Play-video{
   width: 960px;
   height: 540px;
+}
+footer{
+  color:#000000;
+  text-align: center;
+  background-color: rgb(222, 197, 255);
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding-top: 4px;
+  font-size: 16px;
+  font-weight:bold;
+}
+main{
+  margin-right: 0px;
+  margin-left: auto;
+  padding-right: 60px;
+  width: 100%;
+  max-width: 1080px;
+  background-color: rgba(255, 186, 186, 0.397);
+  text-align:center;
+}
+.Rsidebar{
+  position: sticky;
+  top:0px;
+  width: 100%;
+  max-width:400px;
+  height:min-content;
+  max-height: 600px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-right: 60px;
+  background-color:#e952522f;
+  text-align:left;
+}
+.overall{
+  display:flex;
+}
+hrs1{
+  font-size: 32px;
+  font-weight:bold;
+}
+prs1{
+  font-size: 24px;
 }
