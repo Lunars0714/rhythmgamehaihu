@@ -18,9 +18,14 @@ header {
 nav{
   text-align: center;
 }
+nav .menu-bar{
+  margin: auto;
+  width: 1160px;
+  background-color: #333;
+}
 .main-menu {
   list-style-type: none;
-  margin: 0 ;
+  margin: 0px ;
   padding: 0 ;
   background-color: rgb(184, 184, 184);
   line-height: 128px;
@@ -28,15 +33,19 @@ nav{
   
 .main-menu li {
   display: inline-block;
-  width: 128px;
+  max-width: 256px;
 }
   
 .main-menu li a {
   text-decoration: none;
-  padding: 5px ;
+  padding: 40px ;
+  padding-left: 60px;
+  padding-right: 60px;
   color: #333;
 }
-  
+nav ul li a{
+  background-color: rgb(153, 165, 156);
+} 
 nav ul li a:hover{
   color: rgb(255, 255, 255);
   background-color: rgb(31, 31, 31);
@@ -74,7 +83,8 @@ footer{
 main{
   margin-right: 0px;
   margin-left: auto;
-  padding-right: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
   width: 100%;
   max-width: 1080px;
   background-color: rgba(255, 186, 186, 0.397);
@@ -82,15 +92,16 @@ main{
 }
 .Rsidebar{
   position: sticky;
-  top:0px;
+  top:30px;
+  max-width:330px;
   width: 100%;
-  max-width:400px;
   height:min-content;
   max-height: 600px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  margin-right: 60px;
+  padding-right: 0px;
+  margin-right: 20px;
   background-color:#e952522f;
   text-align:left;
 }
@@ -100,6 +111,7 @@ main{
 hrs1{
   font-size: 32px;
   font-weight:bold;
+  
 }
 prs1{
   font-size: 24px;
