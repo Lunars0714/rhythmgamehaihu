@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <meta charset="UTF-8">
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+  //共通パーツ読み込み
+    $(function() {
+      $("#header").load("/rhythmgamehaihu/include/header.html");
+      $("#footer").load("/rhythmgamehaihu/include/footer.html");
+      $("#nav").load("/rhythmgamehaihu/include/nav.html");
+    });
+  </script>
+  <link rel="stylesheet" href="/rhythmgamehaihu/include/stylesheet.css">
+  <link rel="stylesheet" href="/rhythmgamehaihu/playing/stylesheet.css">
+  <link rel="icon" href="/rhythmgamehaihu/img/favicon.png">
+  <title>ゲームの遊び方-音ゲー配布場所</title>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="nav"></div>
+  <div class="overall">
+    <main>
+      <h2 id="menu">メニュー画面の説明</h2><br>
+      <p>
+        <p1>起動するとこの画面が表示されると思います</p1><br>
+        <img class="gamescreen1" src="/rhythmgamehaihu/img/gamemenu1.png" width="427" height="240"><br>
+      </p>
+      <p>
+        <h1>各機能の詳細</h1><br>
+        <img class="gamescreen1" src="/rhythmgamehaihu/img/gamemenu2.png" width="427" height="240"><br>
+        <div class="left">
+          <p1>
+            細かい解説をします<br>
+            <p1 class="purple bold">選択中の楽曲</p1>には、現在選択中の楽曲と、曲のidが表示されます。<br>
+            <p1 class="red bold">前の楽曲に</p1>を押すと、曲のid順にひとつ前の楽曲になります。<br>
+            <p1 class="blue bold">次の楽曲に</p1>を押すと、曲のid順にひとつ次の楽曲になります。<br>
+            <p1 class="bold">前回のScore</p1>には、前回プレイした時のスコアが記録されます。再起動するとリセットされます。<br>
+            <p1 class="bold">この曲の最高スコア</p1>には、選択中の楽曲の最高スコアが記録されます。再起動してもリセットされません。<br>
+            <p1 class="bold">最高スコアをリセット</p1>を押すと、すべての最高スコアをリセットします。<br>
+            <p1 class="bold">前回プレイした曲</p1>には前回プレイした曲のidが表示されます。<br>
+            <p1 class="yellow bold">スピード</p1>をスライドすると、ノーツの速度を変更できます。<br>
+            <p1 class="bold">スタート</p1>を押すと、選択中の楽曲でスタートします。<br>
+          </p1>
+        </div>
+      </p>
+      <h2 id="game">ゲーム画面の説明</h2><br>
+      <p1>スタートするとこの画面になると思います</p1><br>
+      <img class="gamescreen1" src="/rhythmgamehaihu/img/gamescreen1.png"><br>
+      <h1>各機能の詳細</h1><br>
+      <img class="gamescreen1" src="/rhythmgamehaihu/img/gamescreen2.png"><br>
+      <div class="left">
+        <p1>
+          赤色と青色の色がついているレーンが今選択しているレーンです。<br>
+          Q W E を押すと、選択しているレーンがそれぞれ 左 中 右に移動します。<br>
+          D F を押すと、選択しているレーンを左右に一つ動かせます。<br>
+          <p1 class="red">J</p1>と<p1 class="blue">K</p1>はそれぞれ<p1 class="red">赤</p1>と<p1 class="blue">青</p1>のレーンに対応しています。<br>
+          判定バーとノーツが重なったとき、<p1 class="red">J</p1> <p1 class="blue">K</p1> を押して、ノーツを消しましょう！<br>
+        </p1>
+    </main>
+    <div class="Rsidebar">
+      <aside>
+        <hrs1>見出し</hrs1>
+        <prs1><li><a href="#menu">メニュー画面の説明</a></li></prs1>
+        <prs1><li><a href="#game">ゲーム画面の説明</a></li></prs1>
+      </aside>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>

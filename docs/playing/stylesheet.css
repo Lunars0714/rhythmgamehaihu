@@ -1,0 +1,21 @@
+.left{
+    text-align: left;
+}
+.red{
+    color: rgb(255, 88, 88);
+    
+}
+.blue{
+    color: rgb(70, 70, 255);
+    
+}
+.purple{
+    color: rgb(109, 33, 180);
+    
+}
+.yellow{
+    color:rgb(82, 82, 23)
+}
+.bold{
+    font-weight: bold;
+}
