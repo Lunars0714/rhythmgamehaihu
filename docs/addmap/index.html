@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <meta charset="UTF-8">
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+  //共通パーツ読み込み
+    $(function() {
+      $("#header").load("/rhythmgamehaihu/include/header.html");
+      $("#footer").load("/rhythmgamehaihu/include/footer.html");
+      $("#nav").load("/rhythmgamehaihu/include/nav.html");
+    });
+  </script>
+  <link rel="stylesheet" href="/rhythmgamehaihu/include/stylesheet.css">
+  <link rel="stylesheet" href="/rhythmgamehaihu/stylesheet.css">
+  <link rel="stylesheet" href="/rhythmgamehaihu/addmap/stylesheet.css">
+  <link rel="icon" href="/rhythmgamehaihu/img/favicon.png">
+  <title>ダウンロード-音ゲー配布場所</title>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="nav"></div>
+  <div class="overall">
+    <main>
+      <h2 id="overview">ファイル構成</h2><br>
+      <p>
+        <p2>このゲームの譜面ファイルは ".Exe(実行ファイル)がある階層\MusicGame_Data\StreamingAssets\Music"(以下Musicフォルダ) に格納されています</p2><br>
+        <p2>Musicフォルダにある"musiclist.json"ファイルの"musiclist"配列に一覧が記されています。</p2><br>
+        <p2>同じくMusicフォルダに上記の配列に対応したフォルダ(以下譜面フォルダ)があり、その中に譜面ファイル、音楽ファイル、情報ファイルがあります。</p2><br>
+        <p2>譜面フォルダの中にあるファイルを解説します。</p2><br>
+        <p2>Music.wav これは音声ファイルです。wav形式である必要があります。</p2><br>
+        <p2>index.json これは情報ファイルです。json形式で、BPM,bitrate,quantizeの三項目があり、それぞれの情報を入力する必要があります。</p2><br>
+        <p2>Score.json これは譜面ファイルです。json形式で、Setch氏の<a href="https://github.com/setchi/NoteEditor">NoteEditor</a>が使用できます。</p2><br>
+      </p>
+      <h2 id="createmap">実際に作る</h2><br>
+        <p2>
+        1.Musicフォルダにあるmusiclist.jsonの"musiclist"配列に追記する。<br>
+        例:{"musiclist":["violin"]}から{"musiclist":["violin","piano"]}<br>
+        2.追記した名前のフォルダをMusicフォルダ直下に作成。<br>
+        例:musicフォルダの中身が musiclist.json(ファイル) violin(フォルダ) に piano(フォルダ)を追加<br>
+        3.作成したフォルダの中にNoteEditorで作った譜面をScore.jsonという名前で保存<br>
+        4.同じフォルダの中に.wav形式の音声ファイルをMusic.wavという名前で保存<br>
+        5.index.jsonを作成。<br>
+        形式:{
+          "BPM":整数,
+          "bitrate":整数,
+          "quantize":整数
+        }<br>
+        BPMはそのまま曲のBPMです。<br>
+        bitrateはMusic.wavのビットレートを入力してください。<br>
+        quantizeはNoteEditorのLPBを入力してください。
+        <br>
+        例:{
+          "BPM":170,
+          "bitrate":44100,
+          "quantize":4
+      }<br>
+        </p2>
+      <p>
+        これで譜面が追加されているはずです、作業お疲れ様です。
+      </p>
+    </main>
+    <div class="Rsidebar">
+      <aside>
+        <hrs1>見出し</hrs1>
+        <prs1><li><a href="#overview">ファイル構成</a></li></prs1>
+        <prs1><li><a href="#createmap">実際に作る</a></li></prs1>
+      </aside>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>
