@@ -26,8 +26,7 @@
       <h2 id="overview">ファイル構成</h2><br>
       <p>
         <p2>このゲームの譜面ファイルは ".Exe(実行ファイル)がある階層\MusicGame_Data\StreamingAssets\Music"(以下Musicフォルダ) に格納されています</p2><br>
-        <p2>Musicフォルダにある"musiclist.json"ファイルの"musiclist"配列に一覧が記されています。</p2><br>
-        <p2>同じくMusicフォルダに上記の配列に対応したフォルダ(以下譜面フォルダ)があり、その中に譜面ファイル、音楽ファイル、情報ファイルがあります。</p2><br>
+        <p2>Musicフォルダに上記の配列に対応したフォルダ(以下譜面フォルダ)があり、その中に譜面ファイル、音楽ファイル、情報ファイルがあります。</p2><br>
         <p2>譜面フォルダの中にあるファイルを解説します。</p2><br>
         <p2>Music.wav これは音声ファイルです。wav形式である必要があります。</p2><br>
         <p2>index.json これは情報ファイルです。json形式で、BPM,bitrate,quantizeの三項目があり、それぞれの情報を入力する必要があります。</p2><br>
@@ -35,8 +34,6 @@
       </p>
       <h2 id="createmap">実際に作る</h2><br>
         <p2>
-        1.Musicフォルダにあるmusiclist.jsonの"musiclist"配列に追記する。<br>
-        例:{"musiclist":["violin"]}から{"musiclist":["violin","piano"]}<br>
         2.追記した名前のフォルダをMusicフォルダ直下に作成。<br>
         例:musicフォルダの中身が musiclist.json(ファイル) violin(フォルダ) に piano(フォルダ)を追加<br>
         3.作成したフォルダの中にNoteEditorで作った譜面をScore.jsonという名前で保存<br>
